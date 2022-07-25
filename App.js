@@ -16,6 +16,7 @@ Entypo.loadFont();
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
+
 const TabNavigator = () => {
   return (
     <Tab.Navigator

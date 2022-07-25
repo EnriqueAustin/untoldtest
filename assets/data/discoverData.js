@@ -4,7 +4,7 @@ const discoverData = [
         title: 'Ocean Views',
         location: 'Cape Town',
         image: require('../images/penguens.jpg'),
-        imageBig: require('../images/kayak-big.png'),
+        imageBig: require('../images/penguens.jpg'),
         description:
             "rhrth h rth t rh rth  rthdrrhrt htr  jrt jdj y jy j dtydjtyj     yju k t ijd ty jsj  s tj r tgf",
         liked: true,
