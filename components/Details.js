@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ImageBackground, Dimensions } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { View, Text, StyleSheet, ImageBackground, Dimensions,TouchableOpacity } from 'react-native';
 import colors from '../assets/colors/colors';
 import Entypo from 'react-native-vector-icons/Entypo';
 
@@ -48,7 +47,27 @@ const Details = ({route, navigation}) => {
                             <Text style={styles.infoSubText}>/person</Text>
                         </View>
                     </View>
+
+                    <View style={styles.infoItem}>
+                        <Text style={styles.infoTitle}>RATING</Text>
+                        <View style={styles.infoTextWrapper}>
+                            <Text style={styles.infoText}>R{item.rating}</Text>
+                            <Text style={styles.infoSubText}>/5</Text>
+                        </View>
+                    </View>
+
+                    <View style={styles.infoItem}>
+                        <Text style={styles.infoTitle}>DURATION</Text>
+                        <View style={styles.infoTextWrapper}>
+                            <Text style={styles.infoText}>R{item.duration}</Text>
+                            <Text style={styles.infoSubText}> hours</Text>
+                        </View>
+                    </View>
                 </View>
+
+                <TouchableOpacity style={styles.buttonWrapper} onPress={() => alert('You Booked A Trip')}>
+                    <Text style={styles.buttonText}>Book Now</Text>
+                </TouchableOpacity>
             </View>
         </View>
     );
@@ -126,6 +145,46 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: colors.darkGray,
         height: 85,
+    },
+    infoWrapper: {
+        flexDirection: 'row',
+        marginHorizontal: 20,
+        marginTop: 20,
+        justifyContent: 'space-between',
+    },
+    infoItem: {},
+    infoTitle: {
+        fontFamily: 'Lato-Bold',
+        fontSize: 12,
+        color: colors.gray,
+    },
+    infoTextWrapper: {
+        flexDirection: 'row',
+        alignItems: 'flex-end',
+        marginTop: 5,
+    },
+    infoText: {
+        fontFamily: 'Lato-Bold',
+        fontSize: 24,
+        color: colors.green,
+    },
+    infoSubText: {
+        fontFamily: 'Lato-Bold',
+        fontSize: 14,
+        color: colors.gray,
+    },
+    buttonWrapper: {
+        marginHorizontal: 20,
+        marginTop: 40,
+        backgroundColor: colors.green,
+        alignItems: 'center',
+        paddingVertical: 15,
+        borderRadius: 20,
+    },
+    buttonText: {
+        fontFamily: 'Lato-Bold',
+        fontSize: 18,
+        color: colors.white,
     },
 });
 
