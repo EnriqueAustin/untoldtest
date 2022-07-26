@@ -69,18 +69,20 @@ const Home = ({ navigation }) => {
 
     const renderLearnMoreItem = ({item}) => {
         return (
-            <ImageBackground
-            source={item.image}
-            style={[
-                styles.learnMoreItem,
-                {
-                    marginLeft: item.id === 'learnMore-1' ? 20 : 0,
-                },
-            ]}
-            imageStyle={styles.learnMoreItemImage}
-            >
-                <Text style={styles.learnMoreItemText}>{item.title}</Text>
-            </ImageBackground>
+            <TouchableOpacity>
+                <ImageBackground
+                source={item.image}
+                style={[
+                    styles.learnMoreItem,
+                    {
+                        marginLeft: item.id === 'learnMore-1' ? 20 : 0,
+                    },
+                ]}
+                imageStyle={styles.learnMoreItemImage}
+                >
+                    <Text style={styles.learnMoreItemText}>{item.title}</Text>
+                </ImageBackground>
+            </TouchableOpacity>
         );
     };
 
@@ -192,7 +194,7 @@ const styles = StyleSheet.create({
         paddingVertical: 20,
     },
     discoverItem: {
-        width: 170,
+        width: 250,
         height: 250,
         justifyContent: 'flex-end',
         paddingHorizontal: 10,
