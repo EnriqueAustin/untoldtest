@@ -6,7 +6,7 @@ const discoverData = [
         image: require('../images/penguens.jpg'),
         imageBig: require('../images/penguens.jpg'),
         description:
-            "rhrth h rth t rh rth  rthdrrhrt htr  jrt jdj y jy j dtydjtyj     yju k t ijd ty jsj  s tj r tgf",
+            "Officia ullamco dolore consequat fugiat dolore dolor veniam dolor aliquip non consequat est eu nulla.",
         liked: true,
         price: 50,
         rating: 5,
@@ -17,9 +17,9 @@ const discoverData = [
         title: 'Langebaan Beaches',
         location: 'Langebaan',
         image: require('../images/night.jpg'),
-        imageBig: require('../images/kayak-big.png'),
+        imageBig: require('../images/night.jpg'),
         description:
-            "rhrth h rth t rh rth  rthdrrhrt htr  jrt jdj y jy j dtydjtyj     yju k t ijd ty jsj  s tj r tgf",
+            "Ipsum id adipisicing occaecat velit magna consequat voluptate adipisicing elit laboris eiusmod do fugiat cillum.",
         liked: true,
         price: 50,
         rating: 5,
@@ -30,9 +30,9 @@ const discoverData = [
         title: 'Langebaan Resturants',
         location: 'Langebaan',
         image: require('../images/langebaan.webp'),
-        imageBig: require('../images/kayak-big.png'),
+        imageBig: require('../images/langebaan.webp'),
         description:
-            "rhrth h rth t rh rth  rthdrrhrt htr  jrt jdj y jy j dtydjtyj     yju k t ijd ty jsj  s tj r tgf",
+            "Eu consequat mollit dolore aliqua ipsum enim veniam ullamco minim.",
         liked: true,
         price: 50,
         rating: 5,

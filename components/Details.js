@@ -51,7 +51,7 @@ const Details = ({route, navigation}) => {
                     <View style={styles.infoItem}>
                         <Text style={styles.infoTitle}>RATING</Text>
                         <View style={styles.infoTextWrapper}>
-                            <Text style={styles.infoText}>R{item.rating}</Text>
+                            <Text style={styles.infoText}>{item.rating}</Text>
                             <Text style={styles.infoSubText}>/5</Text>
                         </View>
                     </View>
@@ -59,8 +59,8 @@ const Details = ({route, navigation}) => {
                     <View style={styles.infoItem}>
                         <Text style={styles.infoTitle}>DURATION</Text>
                         <View style={styles.infoTextWrapper}>
-                            <Text style={styles.infoText}>R{item.duration}</Text>
-                            <Text style={styles.infoSubText}> hours</Text>
+                            <Text style={styles.infoText}>{item.duration}</Text>
+                            <Text style={styles.infoSubText}></Text>
                         </View>
                     </View>
                 </View>
